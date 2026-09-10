@@ -1,25 +1,25 @@
 class Notifyd < Formula
   desc "Agent-first self-hosted notification service. Email, SMS, Push, In-App — one binary, Postgres only."
   homepage "https://github.com/rmzlb/notifyd"
-  version "0.2.2"
+  version "0.3.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/rmzlb/notifyd/releases/download/v0.2.2/notifyd-aarch64-apple-darwin.tar.xz"
-      sha256 "52a2a950b079c594c2594e36690389074bcdf2916fa3c543c8645474c74da863"
+      url "https://github.com/rmzlb/notifyd/releases/download/v0.3.0/notifyd-aarch64-apple-darwin.tar.xz"
+      sha256 "bff6cf41b44313d54faf9fd008e8794752911ce8b9782d521e0dfc125f60024f"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/rmzlb/notifyd/releases/download/v0.2.2/notifyd-x86_64-apple-darwin.tar.xz"
-      sha256 "d8d370a7730046fb6576313b628db348f6ea1688dd74c87a534a44776bb7ab1c"
+      url "https://github.com/rmzlb/notifyd/releases/download/v0.3.0/notifyd-x86_64-apple-darwin.tar.xz"
+      sha256 "10f523e3083d8255510939e3b1758d4a34181276ece2c701732005126c122c07"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/rmzlb/notifyd/releases/download/v0.2.2/notifyd-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "395bcba9d5c5f73cb808c381a3ef389e024b56b1671a56ee66557474382895c8"
+      url "https://github.com/rmzlb/notifyd/releases/download/v0.3.0/notifyd-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "a38e619c937b54a8d5c2c376c8662877f7233970459d86995da17df84f2b09be"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/rmzlb/notifyd/releases/download/v0.2.2/notifyd-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "1af4d9448ac9495d7d7c8bf5abcdf3f0d0bc4f6842a9b01c4e4e5ff65d10c825"
+      url "https://github.com/rmzlb/notifyd/releases/download/v0.3.0/notifyd-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "3500bb6602f0f00a80978a73840c121e9efb827358857c33c1683ca83f151649"
     end
   end
   license "MIT"
